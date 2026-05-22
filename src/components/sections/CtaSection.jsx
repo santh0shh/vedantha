@@ -1,4 +1,5 @@
 import Icon from '../icons/Icon'
+import { handleNavClick } from '../../utils/scrollToHash'
 
 export default function CtaSection() {
   return (
@@ -14,6 +15,7 @@ export default function CtaSection() {
         <a
           href="#apply"
           className="mx-auto flex w-fit items-center gap-2 rounded-md bg-primary px-10 py-4 text-lg font-bold text-white transition-all hover:bg-primary/90"
+          onClick={(e) => handleNavClick(e, '#apply')}
         >
           GET STARTED
           <Icon name="arrowRight" className="h-5 w-5" />

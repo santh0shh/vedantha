@@ -30,12 +30,12 @@ const paths = {
 
 export default function Icon({ name, className = 'h-6 w-6', strokeWidth = 2 }) {
   const path = paths[name]
-  if (!path) return null
+  // if (!path) return null
 
   const isFilled = name === 'dollar'
 
   if (isFilled) {
-    return <span className={`text-primary text-xl ${className}`}>$</span>
+    return <span className={`text-primary text-xl ${className} mb-4 block`}>$</span>
   }
 
   const multiPath = path.includes(' M')

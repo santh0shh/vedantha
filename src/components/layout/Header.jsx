@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { navLinks } from '../../data/siteData'
+import { handleNavClick } from '../../utils/scrollToHash'
 import Icon from '../icons/Icon'
 
 export default function Header() {
@@ -17,7 +18,7 @@ export default function Header() {
             e.preventDefault()
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
-        >
+         >
           VEDANTHA GLOBAL
         </a>
 
@@ -27,6 +28,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-on-surface-variant transition-colors hover:text-white"
+              onClick={(e) => handleNavClick(e, link.href)}
             >
               {link.label}
             </a>
@@ -34,6 +36,7 @@ export default function Header() {
           <a
             href="#apply"
             className="rounded-md border border-primary/30 bg-primary/20 px-6 py-2 text-sm font-bold tracking-wider text-primary uppercase transition-all hover:bg-primary/30"
+            onClick={(e) => handleNavClick(e, '#apply')}
           >
             Apply
           </a>
@@ -63,7 +66,7 @@ export default function Header() {
                 <a
                   href={link.href}
                   className="text-lg font-medium text-on-surface-variant hover:text-white"
-                  onClick={closeMobile}
+                  onClick={(e) => handleNavClick(e, link.href, closeMobile)}
                 >
                   {link.label}
                 </a>
@@ -73,7 +76,7 @@ export default function Header() {
               <a
                 href="#apply"
                 className="inline-block rounded-md border border-primary/30 bg-primary/20 px-6 py-2 text-lg font-bold tracking-wider text-primary uppercase"
-                onClick={closeMobile}
+                onClick={(e) => handleNavClick(e, '#apply', closeMobile)}
               >
                 Apply
               </a>

@@ -1,4 +1,5 @@
 import Icon from '../icons/Icon'
+import { handleNavClick } from '../../utils/scrollToHash'
 
 export default function HeroSection() {
   return (
@@ -21,6 +22,7 @@ export default function HeroSection() {
             <a
               href="#apply"
               className="flex items-center gap-2 rounded-md bg-primary px-8 py-4 font-bold text-white transition-all hover:bg-primary/90"
+              onClick={(e) => handleNavClick(e, '#apply')}
             >
               Apply For Jobs
               <Icon name="arrowRight" className="h-4 w-4" />
@@ -28,6 +30,7 @@ export default function HeroSection() {
             <a
               href="#contact"
               className="rounded-md border border-outline px-8 py-4 font-bold text-white transition-all hover:bg-white/5"
+              onClick={(e) => handleNavClick(e, '#contact')}
             >
               Hire Talent
             </a>

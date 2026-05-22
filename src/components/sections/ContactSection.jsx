@@ -34,7 +34,7 @@ export default function ContactSection() {
   return (
     <section className="bg-[#0c0f0f] px-margin-desktop py-section-gap" id="contact">
       <div className="mx-auto max-w-container-max">
-        <div className="mb-16">
+        <div>
           <span className="mb-2 block text-xs font-bold tracking-[0.2em] text-on-surface-variant/40 uppercase">
             Contact
           </span>
@@ -42,7 +42,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-          <div className="space-y-10 lg:col-span-4">
+          <div className="space-y-10 lg:col-span-4 pt-12">
             <div className="space-y-6">
               <ContactRow icon="location" label="Address" value={contactInfo.address} />
               <ContactRow
@@ -64,7 +64,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="lg:col-span-8" id="apply">
+          <div className="lg:col-span-8 pt-12" id="apply">
             {submitted && (
               <p
                 className="mb-6 rounded-md border border-primary/30 bg-primary/10 px-4 py-3 text-sm text-primary"
@@ -152,7 +152,7 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                className="w-full rounded-md bg-primary py-4 text-sm font-bold tracking-widest text-white uppercase transition-all hover:bg-primary/90"
+                className="w-full rounded-md bg-primary py-4 text-sm font-bold tracking-widest text-white uppercase transition-all hover:bg-primary/90 cursor-pointer"
               >
                 Submit Application
               </button>
