@@ -127,7 +127,7 @@ export const contactInfo = {
   mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.013523330551!2d81.7670327745851!3d17.02130373921468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a361b82d2048353%3A0x38456701337942d!2sVedantha%20Global%20Solutions!5e0!3m2!1sen!2sin!4v1716534000000!5m2!1sen!2sin',
   address: 'Near Lalacheruvu, Rajahmundry, 533101',
   phone: '+91 70932 37949',
-  email: 'info@vedanthaglobal.com',
+  email: 'recruitment@vedanthasolutions.com',
   mapImage:
     'https://lh3.googleusercontent.com/aida-public/AB6AXuDbSn72lQrAbucTtJNUgJqKEOimgM8zmWT3zOZMO77bh_q3y5siAJrTg0UwTBlVT5gHLbBsFle5Gb_MWnIHpfx84sAtkO_zzjU8PO5sYx5G0E0f7HXeqBY6xqhjZ3NMl9WgQNGZCLmJI3xTUdiB8RvAP0QqKnIkd9audBvveZ89er_CAQv-xUubZXiQ7hNEJITiVH4VuPFdhkUytRjR_nqqS_xaPRucM-fqKEFbkZxLgUCjzkBplmNOe37wGTQztLEiPDWYIfnQPn4',
 }

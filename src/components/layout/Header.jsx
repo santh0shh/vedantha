@@ -12,7 +12,7 @@ export default function Header() {
       <div className="mx-auto flex h-full w-full max-w-container-max items-center justify-between px-margin-desktop">
         <a
           href="#"
-          className="text-xl font-bold tracking-tight text-white"
+          className="text-xl font-bold tracking-tight text-white cursor-pointer"
           onClick={(e) => {
             e.preventDefault()
             window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -62,7 +62,7 @@ export default function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-medium text-on-surface-variant hover:text-white"
+                  className="text-lg font-medium text-on-surface-variant hover:text-white"
                   onClick={closeMobile}
                 >
                   {link.label}
@@ -72,7 +72,7 @@ export default function Header() {
             <li>
               <a
                 href="#apply"
-                className="inline-block rounded-md border border-primary/30 bg-primary/20 px-6 py-2 text-sm font-bold tracking-wider text-primary uppercase"
+                className="inline-block rounded-md border border-primary/30 bg-primary/20 px-6 py-2 text-lg font-bold tracking-wider text-primary uppercase"
                 onClick={closeMobile}
               >
                 Apply
