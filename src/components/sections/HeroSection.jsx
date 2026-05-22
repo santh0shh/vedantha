@@ -5,15 +5,15 @@ export default function HeroSection() {
     <section className="hero-gradient relative flex min-h-[80vh] items-center px-margin-desktop">
       <div className="mx-auto grid w-full max-w-container-max grid-cols-1 gap-12 py-20 lg:grid-cols-12">
         <div className="flex flex-col justify-center lg:col-span-7">
-          <span className="mb-4 w-fit rounded border border-primary/20 px-3 py-1 text-xs font-bold tracking-[0.2em] text-primary uppercase">
+          <span className="mb-4 w-fit rounded border border-primary/20 px-3 py-1 text-base md:text-xs font-bold tracking-[0.2em] text-primary uppercase">
             25+ Hiring Partners
           </span>
-          <h1 className="mb-6 text-5xl leading-[1.0] font-bold md:text-7xl">
+          <h1 className="mb-6 text-6xl leading-[1.0] font-bold md:text-7xl">
             Connecting <br />
             Talent With <br />
             <span className="text-on-surface-variant/40">Opportunity</span>
           </h1>
-          <p className="mb-10 max-w-lg text-lg leading-relaxed text-on-surface-variant">
+          <p className="mb-10 max-w-lg text-xl md:text-lg leading-relaxed text-on-surface-variant">
             Premier recruitment partner for IT and manufacturing sectors. Zero
             cost for candidates, excellence for employers.
           </p>
