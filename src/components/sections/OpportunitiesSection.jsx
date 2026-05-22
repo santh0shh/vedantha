@@ -1,5 +1,6 @@
 import { jobCategories } from '../../data/siteData'
 import Icon from '../icons/Icon'
+import { handleNavClick } from '../../utils/scrollToHash'
 
 export default function OpportunitiesSection() {
   return (
@@ -25,11 +26,7 @@ export default function OpportunitiesSection() {
                     key={role.title}
                     type="button"
                     className="flex cursor-pointer items-center justify-between rounded-md border border-white/5 bg-surface-container-low p-4 text-left transition-colors hover:bg-white/5"
-                    onClick={() => {
-                      document.getElementById('apply')?.scrollIntoView({
-                        behavior: 'smooth',
-                      })
-                    }}
+                    onClick={(e) => handleNavClick(e, '#apply')}
                   >
                     <span className="text-sm">{role.title}</span>
                     <span className="text-xs text-on-surface-variant/40">
