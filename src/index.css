@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface: #121414;
+  --color-surface-container-lowest: #0c0f0f;
+  --color-surface-container-low: #1a1c1c;
+  --color-primary: #6366f1;
+  --color-on-surface: #f8fafc;
+  --color-on-surface-variant: #94a3b8;
+  --color-outline: #334155;
+  --color-outline-variant: rgba(51, 65, 85, 0.2);
+
+  --spacing-margin-desktop: 5%;
+  --spacing-section-gap: 80px;
+  --spacing-gutter: 24px;
+
+  --max-width-container-max: 1280px;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    background-color: #0b0b0b;
+    color: #f8fafc;
+    font-family: var(--font-sans);
+  }
+}
+
+@utility hero-gradient {
+  background: radial-gradient(
+    circle at top right,
+    rgba(99, 102, 241, 0.05),
+    transparent 40%
+  );
+}
+
+@utility stat-divider {
+  border-left: 2px solid rgba(99, 102, 241, 0.5);
+}
